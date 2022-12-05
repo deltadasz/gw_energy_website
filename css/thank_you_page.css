@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+    
+}
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1;
+    font-weight: 600;
+    color: #555;
+    overflow-x: hidden;
+}
+
+.thank_you {
+    padding-top: 30rem;
+    justify-content: space-between;
+    line-height: 1.6rem;
+    align-items: center;
+}
+
+.energy {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    padding-bottom: 6rem;
+}
+
+h1 {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+    font-size: 60px;
+    color: #0C233F;
+}
+p {
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.5;
+    color: #398D43;
+}
+

@@ -1,0 +1,454 @@
+/* Header component */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    height: 7.6rem;
+    padding: 0 4.8rem;
+    position: relative;
+}
+
+.logo {
+    height: 5.4rem;
+}
+
+
+/*  Navigation */
+
+.main-nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+    padding-top: 1rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #0C233F;
+    font-weight: 500;
+    font-size: 1.6rem;
+    transition: all 300ms;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+    padding: 1.2rem 2.4rem;
+    border-radius: 9px;
+    color: #fff;
+    background-color: #398D43;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+    background-color: #fff;
+    color: #398D43;
+    box-shadow: inset 0 0 0 2px #398D43;
+}
+
+
+/* Mobile navigation */
+
+.btn-mobile-nav {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-mobile-nav {
+    height: 4.8rem;
+    width: 4.8rem;
+    color: #0C233F;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+    display: none;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+    color: #398D43;
+}
+
+
+/* Sticky navigation */
+
+.sticky .header {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.904);
+    z-index: 99999;
+    height: 7.6rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+}
+
+.sticky .section-hero {
+    margin-top: 7.6rem;
+}
+
+
+/* Hero component  */
+
+.section-hero {
+    padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+    max-width: 140rem;
+    margin: 0 auto;
+    display: grid;
+    padding: 0 3.2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+    align-items: center;
+}
+
+.hero-description {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+    color: #556579;
+}
+
+
+/* Hero carousel */
+
+.carousel {
+    border-radius: 22px 22px 22px 22px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    overflow: hidden;
+}
+
+.referinte {
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: none;
+}
+
+.carousel-caption {
+    color: white;
+}
+
+
+/* Section how */
+
+.section-how {
+    padding: 8.6rem 0;
+    background-color: #F9F9F9;
+}
+
+.step-number {
+    font-size: 9.8rem;
+    font-weight: 600;
+    color: #b0d1b4;
+    margin-bottom: 1.2rem;
+}
+
+.step-description {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: #556579;
+}
+
+.step-img-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-img {
+    width: 30%;
+}
+
+
+/* Card section*/
+
+.card {
+    padding-bottom: 1rem;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.section-card {
+    padding: 9.6rem 0;
+}
+
+.panouri {
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    background-color: #ebf4ec;
+    border-radius: 11px;
+    overflow: hidden;
+    padding: 4.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-title {
+    font-size: 2.4rem;
+    color: #0C233F;
+    font-weight: 800;
+    margin-bottom: 3.2rem;
+    text-align: center;
+}
+
+.card-img {
+    width: 35%;
+    padding-bottom: 2rem;
+}
+
+
+/* Sectiunea de form*/
+
+.section-cta {
+    padding: 9.6rem 0;
+}
+
+.cta {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    border-radius: 11px;
+    overflow: hidden;
+    background-image: linear-gradient(to right bottom, #398d4310, rgba(136, 187, 142, 0.5));
+}
+
+.cta-text-box {
+    padding: 4.8rem 6.4rem;
+    color: #225528;
+}
+
+.cta .heading-secondary {
+    color: inherit;
+    margin-bottom: 3.2rem;
+}
+
+.cta-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 4.8rem;
+}
+
+.cta-image-box {
+    background-image: linear-gradient(to right bottom, rgba(57, 141, 67, 0.15), rgba(136, 187, 142, 0.15)), url("../img/solar_panel_cta.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.cta-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+}
+
+.cta-form label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select,
+.cta-form textarea {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    background-color: #F9F9F9;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.output {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 2rem;
+    font-family: inherit;
+    text-align: center;
+    color: inherit;
+    border: none;
+    background-color: #c4ddc7;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder,
+.cta-form output::placeholder {
+    color: #aaa;
+}
+
+.cta *:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.3rem rgba(96, 172, 105, 0.123);
+}
+
+
+/* Despre noi */
+
+.about-us {
+    padding-top: 6rem;
+    padding-bottom: 9.2rem;
+    background-color: #F9F9F9;
+}
+
+.despre-noi {
+    font-size: 5.6rem;
+    padding-top: 3rem;
+    padding-bottom: 5.6rem;
+    text-align: center;
+}
+
+.imagine-despre-noi {
+    width: 40%;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectiunea-despre-noi {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.text-despre-noi {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Harta */
+
+
+/* Footer */
+
+.footer {
+    padding: 10.8rem 0;
+    background-color: #fff;
+    box-shadow: 0px -6px 7px -4px rgba(0, 0, 0, 0.3)
+}
+
+.grid--footer {
+    grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 3.2rem;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+}
+
+.social-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.footer-heading {
+    color: #398D43;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+.contact {
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.address {
+    margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.elements {
+    padding: 0;
+}
+
+.footer-logo {
+    height: 8rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #3d4f65;
+    transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+    color: #398D43;
+}
+
+.cookie-container {
+    font-size: 1.6rem;
+    position: fixed;
+    ;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background: #253952;
+    color: #F9F9F9;
+    padding: 2rem 3rem;
+    transition: 400ms;
+    line-height: 2.4rem;
+    box-shadow: 0 -2px 16px hsla(213, 38%, 23%, 0.137);
+}
+
+.cookie-container.active {
+    bottom: 0;
+}
+
+.cookie-container a {
+    color: #F9F9F9;
+}
+
+.cookie-container p {
+    padding-bottom: 1rem;
+}
+
+.cookie-btn {
+    background: #398D43;
+    border: none;
+    color: #F9F9F9;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border-radius: 8px;
+}

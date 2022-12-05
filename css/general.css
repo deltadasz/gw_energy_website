@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+    overflow-x: hidden;
+}
+
+
+/* General components */
+
+.container {
+    max-width: 120rem;
+    padding: 0. 3.2rem;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
+}
+
+.grid:not(:last-child) {
+    margin-bottom: 9.6rem;
+}
+
+.grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid--center-v {
+    align-items: center;
+}
+
+.heading-primary,
+.heading-secondary {
+    font-weight: 700;
+    color: #0C233F;
+    letter-spacing: -0.5px;
+}
+
+.heading-primary {
+    font-size: 5.2rem;
+    line-height: 1.05;
+    margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+    font-size: 4.4rem;
+    line-height: 1.2;
+    margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+    font-size: 2.6rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+    color: #3d4f65;
+}
+
+.subheading {
+    display: block;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #74af7b;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    letter-spacing: 0.75px;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    background-color: #398D43;
+    color: #fff;
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 1.6rem 3.2rem;
+    border-radius: 11px;
+    text-decoration: none;
+    transition: all 300ms;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #fff;
+    color: #398D43;
+    box-shadow: inset 0 0 0 2px #398D43;
+}
+
+.btn--form {
+    align-self: end;
+    padding: 1.2rem;
+}
+
+.calculeaza {
+    background-color: #0C233F;
+}
+
+.calculeaza:hover {
+    background: none;
+    color: #243952;
+    box-shadow: inset 0 0 0 2px #243952;
+}
+
+.trimite:hover {
+    background: none;
+}
